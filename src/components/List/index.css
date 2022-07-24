@@ -1,0 +1,29 @@
+.List {
+    width: 60%;
+    font-family: var(--fonte-primaria);
+}
+
+.List > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.List__buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.List__buttons > button {
+    padding: 0 1rem;
+}
+
+.List > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.List > ul > li > img {
+    width: 100%;
+}

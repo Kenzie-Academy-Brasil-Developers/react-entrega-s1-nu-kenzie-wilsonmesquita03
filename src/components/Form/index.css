@@ -1,0 +1,48 @@
+form {
+    display: flex;
+    flex-direction: column;
+    height: 214px;
+    padding: 3rem 2rem;
+    gap: 1rem;
+    border: 1px var(--Grey-2) solid;
+    font-family: var(--fonte-secundaria);
+}
+
+.form__descricao {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__descricao > label {
+    font-size: .75rem;
+    color: var(--Grey-4);
+}
+
+.form__descricao > span {
+    color: var(--Grey-3);
+    font-size: .75rem;
+    font-weight: 400;
+}
+
+.form__valor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.valor__quantidade{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.valor__tipoDeValor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+}
+
+form > button {
+    width: 100%;
+}

@@ -1,0 +1,100 @@
+:root {
+    --Color-primary: #FD377E;
+    --Color-primary-2: #E34981;
+    --Color-Secondary: #03B898;
+    --Grey-4: #212529;
+    --Grey-3: #868E96;
+    --Grey-2: #E9ECEF;
+    --Grey-1: #F8F9FA;
+
+    --fonte-primaria: 'Nunito', sans-serif;
+    --fonte-secundaria: 'Inter', sans-serif;
+
+
+}
+
+body, ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: bold
+}
+
+h4 {
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+span {
+    font-size: .75rem;
+    font-weight: 400;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    height: 2.5rem;
+    --fonte-primaria: var(--fonte-primaria);
+    font-weight: 600;
+}
+
+.button--default {
+    background-color: var(--Grey-2);
+}
+
+.button--active {
+    background-color: var(--Color-primary);
+    color: var(--Grey-1);
+}
+
+.button:hover {
+    background-color: var(--Grey-3);
+    color: var(--Grey-1);
+}
+
+
+strong {
+    color: var(--Color-primary);
+}
+
+.input__text {
+    height: 2.5rem;
+    background-color: var(--Grey-2);
+    border: none;
+    height: 46px;
+    border-radius: 8px;
+}
+
+.input__text--default {
+    height: 2.5rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--Grey-2);
+    border: 2px transparent solid;
+}
+
+.input__text--default::placeholder {
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.input__text--default:focus {
+    border-color: black;
+    background-color: var(--Grey-1);
+}

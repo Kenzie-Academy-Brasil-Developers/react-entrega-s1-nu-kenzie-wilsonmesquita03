@@ -1,0 +1,12 @@
+.totalMoney {
+    font-family: var(--fonte-primaria);
+    box-sizing: border-box;
+    padding: 1rem;
+    border: 1px var(--Grey-2) solid;
+    border-radius: 8px;
+}
+
+.totalMoney > div {
+    display: flex;
+    justify-content: space-between;
+}

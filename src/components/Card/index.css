@@ -1,0 +1,40 @@
+.card {
+    padding: 0.5rem;
+    box-sizing: border-box;
+    min-height: 7.125rem;
+    overflow: hidden;
+    background-color: var(--Grey-1);
+    border-radius: 8px;
+    border-left: var(--Grey-2) .25rem solid;
+
+}
+
+.card > span {
+    font-size: .75rem;
+    font-weight: 400;
+}
+
+.card--green {
+    border-left-color: var(--Color-Secondary);
+}
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__descricao > h3 {
+    max-width: 30ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card__descricao > button {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+
