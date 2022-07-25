@@ -10,13 +10,21 @@ function Home({btnStart}){
 
 
     function filter(filtrarPor){
-        if(filtrarPor === "Todos"){
-            setList(list)
-        }else{
-            const newArr = list.filter(elem => elem.tipoDeValor === filtrarPor)
+        const newList = [...list]
 
-            setList(newArr)
+        if(filtrarPor === "Todos"){
+            newList.forEach(elem => elem.show = true)
+        }else{
+            newList.forEach(elem => {
+                if(elem.tipoDeValor !== filtrarPor){
+                    elem.show = false
+                }else {
+                    elem.show = true
+                }
+            })
         }
+        
+        setList(newList)
     }
 
     function removeList(id){
@@ -28,7 +36,7 @@ function Home({btnStart}){
     function addList(obj){
         const [descricao, valor, tipoDeValor] = obj
         
-        setList(oldList => [...oldList, {descricao: descricao.value, valor: valor.value, tipoDeValor: tipoDeValor.value, id: oldList.length}])
+        setList(oldList => [...oldList, {descricao: descricao.value, valor: valor.value, tipoDeValor: tipoDeValor.value, id: oldList.length, show: true}])
     }
 
     return (

@@ -1,11 +1,18 @@
 form {
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
-    height: 214px;
+    min-height: 214px;
     padding: 3rem 2rem;
     gap: 1rem;
     border: 1px var(--Grey-2) solid;
     font-family: var(--fonte-secundaria);
+}
+
+@media (max-width: 768px){
+    form {
+        width: 90vw;
+    }
 }
 
 .form__descricao {

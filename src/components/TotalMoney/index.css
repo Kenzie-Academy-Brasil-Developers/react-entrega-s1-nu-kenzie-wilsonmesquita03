@@ -1,4 +1,5 @@
 .totalMoney {
+    width: 90%;
     font-family: var(--fonte-primaria);
     box-sizing: border-box;
     padding: 1rem;

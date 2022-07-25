@@ -18,7 +18,7 @@
 .index__section {
     display: flex;
     flex-direction: column;    
-    gap: 1rem;
+    justify-content: space-evenly;
 }
 
 .index__section > h1 {
@@ -34,6 +34,12 @@
     width: 20rem;
 }
 
+@media (max-width: 337px){
+    .index__section > span {
+        width: initial;
+    }
+}
+
 .index__section > p {
     color: var(--Grey-1);
     font-size: 16px;
@@ -47,6 +53,7 @@
 .index__image {
     display: flex;
     justify-content: flex-end;
+    max-height: 100vh;
 }
 
 .index__image > img {

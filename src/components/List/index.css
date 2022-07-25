@@ -3,9 +3,21 @@
     font-family: var(--fonte-primaria);
 }
 
+@media (max-width: 768px){
+    .List {
+        width: 90vw;
+    }
+}
+
 .List > div {
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: 425px){
+    .List > div {
+        flex-direction: column;
+    }
 }
 
 .List__buttons {
@@ -16,6 +28,12 @@
 
 .List__buttons > button {
     padding: 0 1rem;
+}
+
+@media (max-width: 425px){
+    .List__buttons {
+        overflow-x: scroll;
+    }
 }
 
 .List > ul {

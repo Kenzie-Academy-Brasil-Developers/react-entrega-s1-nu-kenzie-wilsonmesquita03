@@ -8,9 +8,9 @@ function List({list, removeList, filter}){
             <div>
                 <h3>Resumo financeiro</h3>
                 <div className='List__buttons'>
-                    <button className="button button--active" value="Todos" onClick={event => filter(event.target.value)}>Todos</button>
-                    <button className="button button--default" value="Entrada" onClick={event => filter(event.target.value)}>Entradas</button>
-                    <button className="button button--default" value="Despesa" onClick={event => filter(event.target.value)}>Despesas</button>
+                    <button className="button button--active"   onClick={event => filter("Todos")}>Todos</button>
+                    <button className="button button--default"  onClick={event => filter("Entrada")}>Entradas</button>
+                    <button className="button button--default"  onClick={event => filter("Despesa")}>Despesas</button>
                 </div>
             </div>
             <ul>
@@ -24,7 +24,13 @@ function List({list, removeList, filter}){
                     </>
                     : 
 
-                    list.map((item, i) => (<li key={i}><Card removeList={removeList}>{item}</Card></li>))
+                    list.map((item, i) => {
+                        return item.show ? 
+                            <li key={i}><Card removeList={removeList}>{item}</Card></li>
+                        :
+
+                        <></>
+                    })
                 }
             </ul>   
         </section>  

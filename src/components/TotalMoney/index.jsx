@@ -5,7 +5,7 @@ function TotalMoney({list}){
         <div className="totalMoney">
             <div>
                 <h3>Valor Total</h3>
-                <h3>$ {list.reduce((acc, cur) => {return acc + cur.valor}, 0)}</h3>
+                <h3>$ {list.reduce((acc, cur) => { return acc + Number(cur.valor) }, 0 )}</h3>
             </div>
             <span>O valor se refere ao saldo</span>          
         </div>
